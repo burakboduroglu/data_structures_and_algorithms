@@ -4,16 +4,16 @@
 
 ### How to use this repo 🤔
 
-Clone this repo to your local machine.
-Open the notes in your favorite Markdown editor.
-Read the notes and practice the examples.
+- Clone this repo to your local machine.
+- Open the notes in your favorite Markdown editor.
+- Read the notes and practice the examples.
 
 ### How to contribute 🤝
 
-Fork this repo.
-Add your notes.
-Create a pull request.
-Thanks for reading 🙏
+- Fork this repo.
+- Add your notes.
+- Create a pull request.
+- Thanks for reading 🙏
 
 ### You can find in here
 
