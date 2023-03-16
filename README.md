@@ -1,13 +1,28 @@
-## Welcome to Data Structures and Algorithms Repository :wave:
+## Welcome to Data Structures and Algorithms Repository 👋
+
 - This repo contains my data structures and algorithms codes.
 
-### You can find in here 
-- Graphs :round_pushpin:
-- Hash Tables :world_map:
-- Trees :deciduous_tree:
-- Dynamic Programming :muscle:
-- Linked Lists :link:
+### How to use this repo 🤔
 
-and more... :crystal_ball: 
+Clone this repo to your local machine.
+Open the notes in your favorite Markdown editor.
+Read the notes and practice the examples.
 
-#### ~Thanks for visit. :v:
+### How to contribute 🤝
+
+Fork this repo.
+Add your notes.
+Create a pull request.
+Thanks for reading 🙏
+
+### You can find in here
+
+- Graphs 📍
+- Hash Tables 🗺️
+- Trees 🌳
+- Dynamic Programming 💪
+- Linked Lists 🔗
+
+and more... 🔮
+
+If you like this repo, please give it a star. 🌟✌️
