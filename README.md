@@ -68,7 +68,7 @@ We are covering the following array challenges:
 - Array Chunk
 - Two Sum
 
-Creating custom array:
+### Creating custom array:
 
 1. Create an array class.
 2. Implement the following methods:
@@ -82,3 +82,24 @@ Creating custom array:
 
 You can find the implementation of the above challenges in the [Arrays](Arrays/index.js) folder.
 In this folder, you will learn how to create custom arrays and implement the above challenges.
+
+### Reverse String:
+
+Task reverse a given array and convert it to a string.
+
+```javascript
+const myArray = ["B", "U", "R", "A", "K"];
+
+const reverse = (arr) => {
+  let reversed = [];
+  for (let i = arr.length - 1; i >= 0; i--) {
+    reversed.push(arr[i]);
+  }
+  return reversed;
+};
+
+console.log(reverse(myArray)); // [ 'K', 'A', 'R', 'U', 'B' ]
+
+const reversedNameString = reverse(myArray).join("");
+console.log(reversedNameString); // KARUB
+```
