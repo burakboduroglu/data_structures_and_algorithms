@@ -103,3 +103,75 @@ console.log(reverse(myArray)); // [ 'K', 'A', 'R', 'U', 'B' ]
 const reversedNameString = reverse(myArray).join("");
 console.log(reversedNameString); // KARUB
 ```
+
+### Palindromes:
+
+Task check if a given string is a palindrome. Palindrome is a word, phrase, or sequence that reads the same backward as forward.
+
+```javascript
+const isPalindrome = (word) => {
+  const reversedWord = word.split("").reverse().join("");
+  if (word === reversedWord) {
+    return true;
+  }
+  return false;
+};
+
+console.log(isPalindrome("racecar")); // true
+console.log(isPalindrome("hello")); // false
+```
+
+### Reverse Integer:
+
+Task reverse a given integer.
+
+```javascript
+// Solution 1
+const reverseInteger1 = (num) => {
+  return (reversed = num.toString().split("").reverse().join(""));
+};
+
+console.log(reverseInteger1(123)); // "321"
+
+// Solution 2
+const reverseInteger2 = (num) => {
+  let reversed = 0;
+  while (num > 0) {
+    reversed = reversed * 10 + (num % 10);
+    num = Math.floor(num / 10);
+  }
+  return reversed;
+};
+
+console.log(reverseInteger2(123)); // 321
+```
+
+### Sentence Capitalization:
+
+Task capitalize the first letter of each word in a sentence.
+
+```javascript
+const capitalize = (str) => {
+  arr = str.split("");
+  arr.map((char, index) => {
+    if (index === 0) {
+      arr[index] = char.toUpperCase();
+    } else if (arr[index - 1] === " ") {
+      arr[index] = char.toUpperCase();
+    }
+  });
+
+  return arr.join("");
+};
+
+console.log(capitalize("hello")); // "Hello"
+console.log(capitalize("hello world")); // "Hello World"
+```
+
+### FizzBuzz:
+
+Task print numbers from 1 to n. If the number is divisible by 3, print "Fizz". If the number is divisible by 5, print "Buzz". If the number is divisible by both 3 and 5, print "FizzBuzz".
+
+```javascript
+
+```
