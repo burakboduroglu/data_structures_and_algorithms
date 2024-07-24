@@ -173,5 +173,49 @@ console.log(capitalize("hello world")); // "Hello World"
 Task print numbers from 1 to n. If the number is divisible by 3, print "Fizz". If the number is divisible by 5, print "Buzz". If the number is divisible by both 3 and 5, print "FizzBuzz".
 
 ```javascript
+function fizzBuzz(num){
+   if(num % 3 === 0) return "Fizz";
+   else if(num % 5 === 0) return "Buzz";
+   else if(num % 3 === 0 && num % 5 === 0) return "FizzBuzz";
+   else return "Not a FizzBuzz";
+}
 
+console.log(fizzBuzz(3)); // Fizz
+console.log(fizzBuzz(5)); // Buzz
+console.log(fizzBuzz(15)); // FizzBuzz
+console.log(fizzBuzz(7)); // Not a FizzBuzz
 ```
+
+### Max Profit:
+
+Find the maximum profit that can be made by buying and selling a stock on a given day.
+
+```javascript
+function maxProfit(arr){
+    let minPrice = findMinNumber(arr)
+    let maxProfit = 0;
+
+    for(let i=0; i<arr.length; i++){
+        if(arr[i] > minPrice){
+            maxProfit = Math.max(maxProfit, arr[i] - minPrice);
+        } else {
+            minPrice = arr[i];
+        }
+    }
+    return maxProfit;
+}
+
+function findMinNumber(arr){
+    let min = arr[0];
+    for(let i=0; i<arr.length; i++){
+        if(arr[i] < min){
+            min = arr[i];
+        }
+    }
+    return min;
+}
+
+const prices = [7,1,5,3,6,4];
+console.log(maxProfit(prices)); // 6
+```
+
